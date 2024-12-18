@@ -1,0 +1,88 @@
+def per(fare,food,fac,NN):
+    print("Fare of place",fare)
+    print("MEAL",food)
+    print("Facilities",fac)
+    print("Number of person",NN)
+    TotalFare=NN*(fare+food+fac)
+    print(TotalFare)
+ 
+print("1. Delhi \n 2. Jaipur \n 3. Mumbai \n 4. Dehradhun" )
+des=input("Select Destination")
+if(des.lower() in ["1","Delhi"]):
+    print('Destination is Delhi')
+    Trans=input("Enter transportation\n1.Bus\n2.Train\n")
+    if(Trans==1):
+        DF=1000
+    else:
+        DF=2000
+    Food=int(input("Do you want to add meal:\n1.yes\n2.no"))
+    if(Food==1):
+        ff=500
+    else:
+        ff=0
+    fac=int(input("Do you want A/C OR Not\n1. Yes\n2. No\n"))
+    if(fac==1):
+        fc=1000
+    else:
+        fc=0
+    NN=int(input("Number of person"))
+    per(DF,ff,fc,NN)
+elif(des.lower() in ["2","JAIPUR"]):
+    print('Destination is JAIPUR')
+    Trans=input("Enter transportation\n1.Bus\n2.Train\n")
+    if(Trans==1):
+        DF=1500
+    else:
+        DF=2500
+    Food=int(input("Do you want to add meal:\n1.yes\n2.no"))
+    if(Food==1):
+        ff=500
+    else:
+        ff=0
+    fac=int(input("Do you want A/C OR Not\n1. Yes\n2. No\n"))
+    if(fac==1):
+        fc=1000
+    else:
+        fc=0
+    NN=int(input("Number of person"))
+    per(DF,ff,fc,NN)
+elif(des.lower() in ["3","Mumbai"]):
+    print('Destination is Mumbai')
+    Trans=input("Enter transportation\n1.Bus\n2.Train\n")
+    if(Trans==1):
+        DF=1800
+    else:
+        DF=2800
+    Food=int(input("Do you want to add meal:\n1.yes\n2.no"))
+    if(Food==1):
+        ff=500
+    else:
+        ff=0
+    fac=int(input("Do you want A/C OR Not\n1. Yes\n2. No\n"))
+    if(fac==1):
+        fc=1000
+    else:
+        fc=0
+    NN=int(input("Number of person"))
+    per(DF,ff,fc,NN)
+elif(des.lower() in ["4","Dehradhun"]):
+    print('Destination is Dehradhun')
+    Trans=input("Enter transportation\n1.Bus\n2.Train\n")
+    if(Trans==1):
+        DF=2000
+    else:
+        DF=2500
+    Food=int(input("Do you want to add meal:\n1.yes\n2.no"))
+    if(Food==1):
+        ff=500
+    else:
+        ff=0
+    fac=int(input("Do you want A/C OR Not\n1. Yes\n2. No\n"))
+    if(fac==1):
+        fc=1000
+    else:
+        fc=0
+    NN=int(input("Number of person"))
+    per(DF,ff,fc,NN)
+else:
+    print("Select any destination")
